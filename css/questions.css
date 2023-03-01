@@ -1,0 +1,168 @@
+.questions {
+  height: 1200px;
+  margin-top: 140px;
+  background: url('/image/bag.png') -16px 726px/ 194px 177px,
+    url('/image/watercolor_questions.png') top left / 100% 1200px;
+  background-repeat: no-repeat;
+}
+
+.questions-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.questions-title {
+  margin-left: 33px;
+}
+
+.questions-content {
+  margin: 0 0 0 76px;
+  align-items: stretch;
+}
+
+.questions-img {
+  align-items: stretch;
+  width: 645px;
+  height: 803px;
+  object-fit: cover;
+}
+
+.questions-list {
+  counter-reset: num1;
+  list-style: none;
+  width: 92%;
+  padding: 0;
+  margin: 13px 0 0 0;
+}
+
+.questions-item {
+  position: relative;
+  counter-increment: num1;
+  margin: 1px 0 0 30px;
+  padding: 33px 0 33px 33px;
+  border-bottom: 1px solid rgba(72, 72, 72, 0.74);
+}
+
+.questions-item::after {
+  position: absolute;
+  content: counter(num1);
+  width: 14px;
+  height: 48px;
+  top: 28px;
+  margin-left: -30px;
+  font-family: "Fira Sans";
+  font-size: 28px;
+  font-weight: 700;
+  text-align: left;
+  color: transparent;
+  background-image: linear-gradient(#ffc341 0%, #ffd701 96.35%);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.questions-item::before {
+  position: absolute;
+  content: "";
+  top: 46px;
+  right: 40px;
+  width: 15px;
+  height: 9px;
+  background: url('/image/Vector1.svg');
+  background-repeat: no-repeat;
+}
+
+.questions-item:not(.active) .questions-answer {
+  display: none;
+}
+
+.questions-item:not(.active)::before {
+  transform: rotate(180deg);
+}
+
+.questions-subtitle {
+  font-family: "Fira Sans";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 80%;
+  color: #484848;
+  margin: 0;
+  padding: 0;
+}
+
+.questions-answer {
+  font-family: "Fira Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 90%;
+  color: rgba(72, 72, 72, 0.74);
+  margin: 25px 0 0 -30px;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .questions {
+    height: auto;
+    margin-top: 146px;
+    background: url('/image/bag.png') -16px 726px/ 194px 177px;
+    background-repeat: no-repeat;
+  }
+
+  .questions-img {
+    display: none;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .questions-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .questions-content {
+    margin: 0;
+  }
+
+  .questions-title {
+    margin: 0;
+  }
+
+  .questions-list {
+    margin-top: 0px;
+  }
+
+  .questions-item {
+    margin: 0;
+    padding: 36px 0 21px 24px;
+  }
+
+  .questions-item::before {
+    right: -24px;
+  }
+.questions-item::after{
+  top: 30px;
+  margin-left: -24px;
+}
+  .questions-subtitle {
+    width: 100%;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .questions-answer {
+    width: 112%;
+    margin: 17px 0 -4px -25px;
+    font-size: 14px;
+    line-height: 22px;
+   }
+}

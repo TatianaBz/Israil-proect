@@ -1,0 +1,192 @@
+
+/*header*/
+.header {
+  background: url("/image/header-desk.jpg") center 0 no-repeat;
+  width: 100%;
+  height: 895px;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background: url("image/header-desk@2x.jpg")top no-repeat;
+    background-repeat: no-repeat;
+
+  }
+}
+
+.header-nav {
+  margin: 32px auto 0 auto;
+}
+
+.nav {
+  width: 83.6%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-telephone-link {
+  font-family: "Fira Sans";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #484848;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-logo {
+  height: 48px;
+}
+
+.nav-logo img {
+  width: 137px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-order-link {
+  font-family: "Fira Sans";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 2px dashed #484848;
+  padding-bottom: 3px;
+  color: #484848;
+  margin: 0;
+  padding: 0;
+}
+
+.header-fon {
+  margin-top: 148px;
+  height: 678px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.header-fon p {
+  width: 343px;
+  font-family: "Fira Sans";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .nav-telephone {
+    order: 2;
+    width: 50%;
+  }
+
+  .nav-logo {
+    order: 1;
+    width: 100%;
+  }
+
+  .nav-logo img {
+    display: block;
+    width: 120px;
+    height: 42px;
+    margin: 0 auto;
+
+  }
+
+  .nav-order {
+    order: 3;
+    width: 50%;
+    text-align: right;
+  }
+
+  .header-fon p {
+    width: 66%;
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    background: url("/image/header-mob.jpg") center 32px no-repeat;
+    height: 633px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("image/header-mob@2x.jpg") top no-repeat;
+    }
+  }
+
+  .header-nav {
+    margin: 20px auto 0 auto;
+  }
+
+  .nav {
+    flex-flow: column wrap-reverse;
+    justify-content: space-around;
+    align-content: space-between;
+    height: 48px;
+    width: 97%;
+    cursor: pointer;
+  }
+
+  .nav-telephone {
+    order: 1;
+    width: auto;
+    flex: 0 1 auto;
+  }
+
+  .nav-telephone-link {
+    font-size: 14px;
+    line-height: 0;
+    margin-right: 4px;
+  }
+
+  .nav-logo {
+    order: 3;
+    width: auto;
+    flex: 0 1 auto;
+  }
+
+  .nav-logo img {
+    width: 120px;
+    height: 42px;
+    margin-left: 11px;
+  }
+
+  .nav-order {
+    order: 2;
+    width: auto;
+    flex: 0 1 auto;
+    margin-left: 11px;
+  }
+
+  .nav-order-link {
+    font-size: 13px;
+  }
+
+  .header-fon {
+    margin-top: 47px;
+    height: 490px;
+  }
+
+  .header-fon p {
+    width: 100%;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

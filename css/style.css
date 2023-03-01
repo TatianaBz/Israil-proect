@@ -1,0 +1,222 @@
+@import 'header.css';
+@import 'body.css';
+@import 'btn.css';
+@import 'main-title.css';
+@import 'about.css';
+@import 'program-sprite.css';
+@import 'application.css';
+@import 'input.css';
+@import 'conditions.css';
+@import 'conditions-tab.css';
+@import 'stay.css';
+@import 'stay-tabs.css';
+@import 'masa.css';
+@import 'questions.css';
+@import 'reviews.css';
+@import 'details.css';
+@import 'feedback.css';
+@import 'modal.css';
+@import 'clearly.css';
+@import 'footer.css';
+
+
+/*program*/
+.program {
+  padding-top:72px;
+  background-image: url("/image/sketch_bg.png");
+  background-repeat: no-repeat;
+  background-position: right 25px;
+  background-size: auto;
+}
+.program-wrapper{
+  width: 69.3%;
+  margin: 0 auto;
+
+}
+.program-content {
+  margin-top: 65px;
+  display: flex;
+}
+
+.program-slider {
+  align-items: stretch;
+  padding: 0;
+  width: 25.6%;
+  min-width: 230px;
+}
+
+.program-menu {
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.program-menu-item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  height: 73px;
+}
+
+.program-menu-item p {
+  font-family: "Fira Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #484848;
+  padding: 0;
+  margin: 0 0 0 15px;
+}
+
+.program-list {
+  align-items: stretch;
+  margin: 19px 0 0 0;
+  padding: 0;
+  width: 64%;
+
+}
+
+.program-item {
+  list-style: none;
+  display: none;
+  padding-left: 50px;
+}
+
+.program-item_active {
+  display: block;
+}
+
+
+.program-menu-item_active {
+  background-image: url("/image/rectangle.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: auto;
+
+}
+.program-menu-item_active p {
+  color:#fff;
+}
+
+.program-subtitle{
+  margin-bottom: 22px;
+}
+.program-description {
+  font-family: "Fira Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 0;
+  margin: 15px 0 0 0;
+  color: #484848;
+}
+
+@media (max-width: 1000px) {
+  .program-wrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .program-wrapper {
+    width: 95%;
+  }
+}
+
+@media (max-width: 320px) {
+  .program{
+    background-image: url("/image/sketch_bg-mob.png");
+    background-repeat: no-repeat;
+    background-position: right 329px;
+    background-size: auto;
+  }
+  .program-wrapper{
+    width: 100%;
+    padding-top: 140px;
+  }
+
+  .program-content {
+    width: 90%;
+    margin: 16px auto 0 auto;
+    display: block;
+  }
+
+  .program-slider {
+    display: block;
+    width: 100%;
+    height: 48px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .program-menu {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .program-menu-item {
+    width: auto;
+    padding: 0 5px;
+    height: 48px;
+  }
+
+  .program-menu-item_active {
+    background-image: linear-gradient(#ffc341 0%, #ffd701 96.35%);
+    border-radius: 61px;
+  }
+
+  .program-menu-item:nth-child(1).program-menu-item_active {
+    min-width: calc(100% - 160px);
+  }
+
+  .program-menu-item p {
+    font-family: "Fira Sans";
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+
+  .program-list {
+    width: 100%;
+    margin-top: 29px;
+  }
+
+  .program-item {
+    padding-left: 0;
+  }
+
+  .program-menu-item p {
+    display: none;
+  }
+
+  .program-menu-item_active p {
+    display: block;
+  }
+
+  .section-subtitle {
+    text-transform: none;
+    padding: 0;
+    margin: 3px 0 0px 0;
+  }
+
+  .program-description {
+    font-family: "Fira Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0;
+    margin: 15px 0 0 0;
+    color: #484848;
+  }
+
+
+}

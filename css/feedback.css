@@ -1,0 +1,142 @@
+.feedback {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+
+.feedback-politic {
+  width: 27%;
+}
+
+.feedback-request {
+  font-family: "Fira Sans";
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #484848;
+  padding: 0;
+  margin: 0 0 0 0;
+}
+
+.feedback-inform {
+  font-family: "Fira Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(72, 72, 72, 0.5);
+  padding: 0;
+  margin: 12px 0 0 0;
+}
+
+.feedback-form {
+display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 70%;
+  margin-right: 90px;
+}
+
+.feedback-name,
+.feedback-tel {
+  width: 250px;
+  margin-right: 24px;
+  box-sizing: border-box;
+}
+
+.inputbox-modal{
+  width: 250px;
+}
+
+.feedback-name.input-name.input,
+.feedback-tel.input-tel.input{
+  width: 250px;
+}
+
+.feedback-form .feedback-tel:focus~.bar:before,
+.feedback-form .feedback-name:focus~.bar:before{
+  width:calc(100% + 4px);
+}
+
+.feedback-btn {
+  width: 217px;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .feedback {
+    margin: 7px auto 0 auto;
+  }
+
+  .feedback-politic {
+    width: 80%;
+    margin: 0 auto 0 auto;
+  }
+
+  .feedback {
+    flex-direction: column;
+  }
+
+  .feedback-form {
+    width: 90%;
+    margin: 22px auto 0 auto;
+    flex-direction: column;
+  }
+  .feedback-name,
+  .feedback-tel {
+    width: 350px;
+
+  }
+
+  .inputbox-modal{
+    width: 350px;
+  }
+
+  .feedback-name.input-name.input,
+  .feedback-tel.input-tel.input{
+    width: 350px;
+  }
+
+  .inputbox-modal{
+    margin-top: 12px;
+  }
+  .feedback-btn{
+    margin: 12px auto 0 auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .feedback-politic {
+    width: 90%;
+    margin: 0 auto 0 auto;
+  }
+
+  .feedback-request {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .feedback-inform {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .feedback-btn {
+    max-width: 100%;
+    width: 91%;
+    margin: 27px auto 0 auto;
+  }
+
+  .feedback-name.input-name.input,
+  .feedback-tel.input-tel.input{
+    width: 100%;
+  }
+  .inputbox-modal{
+    width: 100%;
+  }
+}

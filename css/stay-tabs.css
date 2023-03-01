@@ -1,0 +1,30 @@
+.stay-tab-list {
+  display: none;
+ }
+
+.stay-tab-item {
+  background-color: rgb(72, 72, 72, 0.2);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  list-style: none;
+}
+
+.stay-tab-item__activ {
+  background-image: linear-gradient(#ffc341 0%, #ffd701 95.35%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+@media (max-width: 320px) {
+  .stay-tab-list {
+    width: 67px;
+    height: 36px;
+    margin: 25px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+}

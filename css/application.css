@@ -1,0 +1,126 @@
+.application {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 0px;
+  margin: 0 auto;
+}
+
+.application-wrapper {
+  background-image: url("/image/backpack.png");
+  background-position: 0% 43%;
+  background-repeat: no-repeat;
+  background-size: 147px 262px;
+  width: 100%;
+  height: 594px;
+}
+
+.application-content {
+  position: absolute;
+  top: 216px;
+  left: 15.4%;
+  width: 32%;
+  height: auto;
+  min-width: 286px;
+  z-index: 3;
+}
+
+.application-paragraf {
+  margin-top: 23px;
+  text-align: left;
+}
+
+.application-picture {
+  position: absolute;
+  top: 6px;
+  right: 0px;
+  width: auto;
+  z-index: 1;
+}
+
+.application-form {
+  margin-top: 65px;
+}
+
+.application-btn {
+  position: relative;
+  z-index: 2;
+  margin-top: -58px;
+  margin-left: 59.5%;
+}
+.application-input:focus~.bar:before{
+  width: 360px;
+}
+@media (max-width: 768px) {
+  .application {
+    position: static;
+    background-image: url("/image/backpack-mob.png");
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 103px 188px;
+    padding-top: 48px;
+  }
+
+  .application-wrapper {
+    background-image: none;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .application-content {
+    position: static;
+    width: 90%;
+    margin: 0 auto;
+    z-index: 1;
+  }
+
+  .application-picture {
+    position: static;
+  }
+
+  .application-title {
+    text-align: center;
+  }
+
+  .application-paragraf {
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .application {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .application-wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .application-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .application-title {
+    margin-top: 31px;
+  }
+
+  .application-paragraf {
+    text-align: left;
+  }
+  .application-form {
+    margin-top: 0px;
+  }
+  .application-inputbox {
+    top: 8px;
+  }
+
+  .application-btn {
+    margin: 17px auto 0 auto;
+  }
+
+}

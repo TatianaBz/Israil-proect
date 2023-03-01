@@ -1,0 +1,56 @@
+
+.section-title {
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  text-transform: uppercase;
+  color: #1fc0fc;
+  margin: 0;
+  padding: 0;
+}
+
+.section-subtitle {
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: -0.12em;
+  text-align: left;
+  color: #1fc0fc;
+  margin: 0;
+  padding: 0;
+}
+
+.section-paragraf {
+  font-family: "Fira Sans";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #484848;
+  padding: 0;
+}
+
+@media (max-width: 320px) {
+  .section-title {
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+
+  .section-paragraf {
+    font-family: "Fira Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}

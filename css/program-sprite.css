@@ -1,0 +1,70 @@
+
+/*sprite*/
+
+.icon {
+  background: url("/icons/sprite.png");
+  display: block;
+  text-indent: -9999px;
+  background-size: 136px auto;
+}
+
+.common {
+  background-position: 0px -70px;
+  width: 28px;
+  height: 33px;
+}
+
+.program-menu-item_active .common {
+  background-position: -56px -70px;
+  width: 28px;
+  height: 33px;
+}
+
+.academic {
+  background-position: 0px -35px;
+  width: 36px;
+  height: 35px;
+}
+
+
+.program-menu-item_active .academic_active {
+  background-position: -35px 0px;
+  width: 36px;
+  height: 35px;
+}
+
+.internship {
+  background-position: -104px -25px;
+  width: 32px;
+  height: 25px;
+}
+
+.program-menu-item_active .internship {
+  background-position: -104px 0px;
+  width: 32px;
+  height: 25px;
+}
+
+.volunteering {
+  background-position: -72px 0px;
+  width: 32px;
+  height: 29px;
+}
+
+.program-menu-item_active .volunteering {
+  background-position: -72px -29px;
+  width: 32px;
+  height: 29px;
+}
+
+.religious {
+  background-position: -23px -103px;
+  width: 23px;
+  height: 25px;
+}
+
+.program-menu-item_active .religious {
+  background-position: -104px -75px;
+  width: 23px;
+  height: 25px;
+}

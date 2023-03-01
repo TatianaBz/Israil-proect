@@ -1,0 +1,304 @@
+.reviews {
+  margin-top: -268px;
+  width: 100%;
+}
+
+.reviews-wrapper {
+  width: 100%;
+  height: 537px;
+  display: flexbox;
+  background: url("/image/sketch.png")no-repeat right top,
+    url("/image/watercolor_reviews.png")no-repeat right top;
+}
+
+.reviews-title {
+  text-align: center;
+}
+
+/*стилизация отзывов*/
+.reviews-list {
+  width: 90%;
+
+  margin: 8px 0 0 92px;
+  padding: 0;
+}
+
+.reviews-item {
+  list-style: none;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.reviews-blockquote {
+  margin-top: 33px;
+  width: 63.5%;
+}
+
+.reviews-paragraf {
+  text-align: left;
+  margin: 34px 0 0 0;
+  width: 87%;
+}
+
+.reviews-autor {
+  display: block;
+  font-family: "Fira Sans";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  color: #484848;
+  padding: 0;
+  margin: 0 0 0 0;
+}
+
+.reviews-program {
+  font-family: "Fira Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1fc0fc;
+  padding: 0;
+  margin: 0 0 0 0;
+}
+
+.reviews-task {
+  font-family: "Fira Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #484848;
+  padding: 0;
+  margin: 0 0 0 0;
+}
+
+.reviews-item img {
+  width: 363px;
+  height: 480px;
+  object-fit: cover;
+  -webkit-mask-image: url("/image/mask.png");
+  mask-image: url("/image/mask.png");
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}
+
+.reviews-blockquote a {
+  font-family: "Fira Sans";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1fc0fc;
+  padding: 0;
+  margin: 0 0 0 0;
+}
+
+.reviews-item:not(.active) {
+  display: none;
+}
+
+/*подвал раздела отзывов*/
+.reviews-slider-button {
+  width: 10%;
+  margin-left: 37%;
+  margin-top: -32px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/*номера слайдов*/
+.reviews-count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 36px;
+}
+
+.reviews-number,
+.reviews-all,
+.reviews-slant {
+  font-size: 24px;
+  color: rgba(72, 72, 72, 0.5);
+  flex-shrink: 0;
+}
+
+/*кнопки для листания слайдера*/
+.reviews-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 41px;
+  margin-left: 17px;
+}
+
+.prev,
+.next {
+  background-color: transparent;
+  border: none;
+  color: rgba(72, 72, 72, 0.2);
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.prev:hover,
+.next:hover,
+.prev:focus,
+.next:focus {
+  color: #484848;
+}
+
+/* иконки социальных сетей*/
+.reviews-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 8%;
+  margin: -27px 0 0 78.5%;
+  padding: 0;
+}
+
+.reviews-social li {
+  width: 24px;
+  height: 24px;
+  list-style: none;
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .reviews {
+    margin-top: 76px;
+    height: 1111px;
+  }
+
+  .reviews-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 537px;
+    background: url("/image/sketch-mob.png")no-repeat 50px center;
+    margin: 0 auto 0 auto;
+  }
+
+  .reviews-title {
+    order: 1;
+  }
+
+  .reviews-list {
+    width: 100%;
+    order: 3;
+    margin: 0;
+  }
+
+  .reviews-item {
+    display: flex;
+    flex-direction: column-reverse;
+    background: none;
+  }
+
+  .reviews-blockquote {
+    width: 100%;
+    margin: 0;
+  }
+
+  .reviews-item img {
+    width: 70%;
+    height: auto;
+    margin: 0 auto 0 auto;
+  }
+  .reviews-autor {
+    margin-top: 49px;
+  }
+  /*кнопки для листания слайдера*/
+  .reviews-slider-button {
+    position: absolute;
+    top: 132%;
+    left: 25%;
+    width: 140px;
+    height: 26px;
+    justify-content: space-between;
+    margin: 0 auto 0 auto;
+    order: 2;
+  }
+
+  /* иконки социальных сетей*/
+  .reviews-social {
+    width: 20%;
+    margin: 22px 0 0 0;
+    order: 4
+  }
+}
+
+@media (max-width: 320px) {
+  .reviews{
+    height: 1043px;
+  }
+  .reviews-item img {
+    width: 83%;
+    margin: 0 auto;
+    height: auto;
+    object-fit: cover;
+    margin-top: 20px;
+  }
+
+
+ .reviews-program {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .reviews-task {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  .reviews-paragraf {
+    width: 100%;
+    font-family: "Fira Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 24px;
+  }
+
+  .reviews-blockquote a{
+    display: block;
+    margin-top: 45px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+
+  /*кнопки для листания слайдера*/
+  .reviews-slider-button {
+    top: 72%;
+    left: 33%;
+    width: 96px;
+    height: 26px;
+ }
+  .reviews-slider-button *{
+   font-size: 14px;
+  }
+
+  /* иконки социальных сетей*/
+  .reviews-social {
+    width: 35%;
+     }
+}
+
+}

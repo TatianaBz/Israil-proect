@@ -1,0 +1,108 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-1_g {
+  background-image: url(sprite.png);
+  background-position: 0px -70px;
+  width: 28px;
+  height: 33px;
+}
+.icon-1_w {
+  background-image: url(sprite.png);
+  background-position: -56px -70px;
+  width: 28px;
+  height: 33px;
+}
+.icon-2_g {
+  background-image: url(sprite.png);
+  background-position: 0px -35px;
+  width: 36px;
+  height: 35px;
+}
+.icon-3_g {
+  background-image: url(sprite.png);
+  background-position: -104px -25px;
+  width: 32px;
+  height: 25px;
+}
+.icon-3_w {
+  background-image: url(sprite.png);
+  background-position: -104px 0px;
+  width: 32px;
+  height: 25px;
+}
+.icon-4_g {
+  background-image: url(sprite.png);
+  background-position: -72px 0px;
+  width: 32px;
+  height: 29px;
+}
+.icon-4_w {
+  background-image: url(sprite.png);
+  background-position: -72px -29px;
+  width: 32px;
+  height: 29px;
+}
+.icon-5_g {
+  background-image: url(sprite.png);
+  background-position: -23px -103px;
+  width: 23px;
+  height: 25px;
+}
+.icon-5_w {
+  background-image: url(sprite.png);
+  background-position: -104px -75px;
+  width: 23px;
+  height: 25px;
+}
+.icon-noun_1240873_cc {
+  background-image: url(sprite.png);
+  background-position: -28px -70px;
+  width: 28px;
+  height: 33px;
+}
+.icon-noun_582688_cc-1 {
+  background-image: url(sprite.png);
+  background-position: -36px 0px;
+  width: 36px;
+  height: 35px;
+}
+.icon-noun_582688_cc {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 36px;
+  height: 35px;
+}
+.icon-noun_655316_cc {
+  background-image: url(sprite.png);
+  background-position: -104px -50px;
+  width: 32px;
+  height: 25px;
+}
+.icon-noun_689837_cc {
+  background-image: url(sprite.png);
+  background-position: -36px -35px;
+  width: 32px;
+  height: 29px;
+}
+.icon-noun_836000_cc {
+  background-image: url(sprite.png);
+  background-position: 0px -103px;
+  width: 23px;
+  height: 25px;
+}

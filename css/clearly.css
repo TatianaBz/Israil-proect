@@ -1,0 +1,153 @@
+.clearly-modal {
+  border: none;
+  border-radius: 8px;
+  width: 480px;
+  height: 520px;
+  display: block;
+  transition: all 0.5ms linear;
+  opacity: 0;
+  overflow: hidden;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 102px;
+}
+
+.clearly-modal[open] {
+  transform: translateY(25px);
+  transition: all 0.5ms linear;
+  opacity: 1;
+  overflow: visible;
+}
+
+.clearly-wrapper {
+  position: relative;
+  padding: 32px 27px 48px 32px;
+}
+
+.clearly-modal::backdrop {
+  background-color: #ebebeb;
+  opacity: 0.55;
+}
+
+/*кнопка с крестиком*/
+.clearly-close {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 26px;
+  right: 26px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+img.clearly-image {
+  display: block;
+  width: 66px;
+  height: 64px;
+  margin: 87px auto 0 auto;
+}
+
+/*заголовок окна*/
+.clearly-title {
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  text-transform: none;
+  margin: 30px auto 0 auto;
+}
+
+/*текст окна*/
+.clearly-text {
+  word-wrap: break-word;
+  width: 360px;
+  font-family: "Fira Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(72, 72, 72, 0.87);
+  padding: 0;
+  margin: 17px auto 0 auto;
+}
+
+.clearly-btn {
+  margin: 31px auto 0 auto;
+  width: 62%;
+}
+
+@media (max-width: 768px) {
+  .clearly-modal {
+    width: 480px;
+    height: 600px;
+  }
+
+  .clearly-wrapper {
+    padding: 24px 16px 24px 16px;
+  }
+
+  /*заголовок окна*/
+  .clearly-title {
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    margin: 80px 0 18px 0;
+  }
+
+  /*текст окна*/
+  .clearly-text {
+    width: 90%;
+    
+    line-height: 26px;
+    text-align: center;
+    margin: 0 auto 30px auto;
+  }
+
+  .clearly-btn {
+    margin: 25px auto 0 auto;
+    width: 72%;
+  }
+}
+
+@media (max-width: 320px) {
+  .clearly-modal {
+    width: auto;
+    max-width: 100%;
+    height: 600px;
+  }
+
+  img.clearly-image {
+    margin: 44px auto 0 auto;
+  }
+
+  /*заголовок окна*/
+  .clearly-title {
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    margin: 30px 0 16px 0;
+  }
+
+  /*текст окна*/
+  .clearly-text {
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .clearly-btn {
+    margin: 25px auto 0 auto;
+    width: 92%;
+  }
+}

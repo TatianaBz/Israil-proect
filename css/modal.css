@@ -1,0 +1,251 @@
+.modal {
+  border: none;
+  border-radius: 8px;
+  width: 480px;
+  height: 520px;
+  display: block;
+  transition: all 0.5ms linear;
+  opacity: 0;
+ overflow: hidden;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 100;
+}
+
+.modal[open] {
+  transform: translateY(125px);
+  transition: all 0.5ms linear;
+  opacity: 1;
+  overflow: visible;
+}
+
+.modal-wrapper {
+  position: relative;
+  padding: 32px 32px 48px 48px;
+}
+
+.modal::backdrop {
+  background-color: #ebebeb;
+  opacity: 0.55;
+}
+
+/*кнопка с крестиком*/
+.modal-close {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 26px;
+  right: 26px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/*заголовок окна*/
+.modal-title {
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  text-transform: none;
+  margin: 21px 0 18px 0;
+}
+
+/*текст окна*/
+.modal-text {
+  word-wrap: break-word;
+  width: 360px;
+  font-family: "Fira Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(72, 72, 72, 0.87);
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+/*инпуты*/
+.modal-form {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-tel,
+.modal-name {
+  width: auto;
+  margin: 0 0 10px 0;
+}
+
+.modal-form .inputbox-modal {
+  width: 100%;
+}
+
+.modal-name.input-name.input,
+.modal-tel.input-tel.input {
+  width: 88%;
+}
+
+.modal-form .modal-tel:focus~.bar:before,
+.modal-form .modal-name:focus~.bar:before {
+  width: calc(100% + 4px);
+}
+
+.modal-btn {
+  margin: 25px auto 0 auto;
+  width: 72%;
+}
+
+/*ЧЕК БОКС*/
+/*положение квадратика и надписи */
+.option {
+  display: block;
+  cursor: pointer;
+  margin-left: 86px;
+  margin-top: 16px;
+}
+
+/*стили надписи*/
+.check {
+  width: 90%;
+  font-family: "Fira Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 0;
+  color: rgba(72, 72, 72, 0.87);
+}
+.red{
+  color: red;
+}
+.check:checked + .checkbox{
+  color: rgba(72, 72, 72, 0.87);
+}
+/*стили кастомного ческбокса*/
+.checkbox {
+  position: absolute;
+  border: 3px solid transparent;
+  border-image: linear-gradient(#ffc341 0%, #ffd701 95.35%);
+  border-image-slice: 1;
+  background-color: #ffffff;
+  width: 13px;
+  height: 13px;
+  margin-left: -27px;
+}
+
+/*галочка*/
+.check-input:checked+.checkbox {
+  background: url("/image/close-btn.svg") no-repeat center;
+  width: 10px;
+  height: 10px;
+  color: rgba(72, 72, 72, 0.87);
+}
+
+.check-input:checked:focus+.checkbox {
+  opacity: 0.5;
+  color: rgba(72, 72, 72, 0.87);
+}
+
+@media (max-width: 768px) {
+  .modal {
+    width: 480px;
+    height: 600px;
+    }
+
+  .modal-wrapper {
+   padding: 24px 16px 24px 16px;
+  }
+
+   /*заголовок окна*/
+  .modal-title {
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    margin: 80px 0 18px 0;
+  }
+
+  /*текст окна*/
+  .modal-text {
+    width: 90%;
+    line-height: 26px;
+    text-align: center;
+    margin: 0 auto 30px auto;
+  }
+
+  /*инпуты*/
+  .modal-form {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .modal-btn {
+    margin: 25px auto 0 auto;
+    width: 72%;
+  }
+}
+
+@media (max-width: 320px) {
+  .modal {
+    width: auto;
+    max-width: 100%;
+    height: 600px;
+  }
+
+
+  /*заголовок окна*/
+  .modal-title {
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    margin: 44px 0 18px 0;
+  }
+
+  /*текст окна*/
+  .modal-text {
+    width: 83%;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  /*инпуты*/
+  .modal-form {
+    width: 85%;
+    display: block;
+    margin: 0 15px 0 0;
+  }
+
+  .modal-btn {
+    margin: 25px auto 0 auto;
+    width: 97%;
+  }
+
+  /*ЧЕК БОКС*/
+  /*положение квадратика и надписи */
+  .option {
+    margin: 13px 0 0 36px;
+  }
+
+  /*стили надписи*/
+  .check {
+    width: 84%;
+  }
+
+  /*стили кастомного ческбокса*/
+  .checkbox {
+    margin-left: -26px;
+  }
+
+}
